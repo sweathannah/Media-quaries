@@ -1,0 +1,129 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    animation-name: test ;
+    /* animation-delay: 2s; */
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes test{
+    /* from */0%{
+        background-color: black;
+    }
+
+    /* to */20%{
+        background-color: red;
+    }
+
+    40%{
+        background-color: blue;
+    }
+
+    60%{
+        background-color: yellow;
+    }
+
+    80%{
+        background-color: green;
+    }
+
+    100%{
+        background-color: orange;
+    }
+}
+
+li{
+    list-style-type: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+li:hover{
+    border-bottom: 1px  solid palevioletred;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+@media screen and (min-width :720px){
+    ul{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+#animate{
+    background-color:purple ;
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: anime;
+    animation-duration: 10sec;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    10%{
+        margin-left: 1rem;
+        transform: skewX(5px);
+    }
+
+    50%{
+        margin-left: 5rem;
+    }
+
+    100%{
+        margin-left:10rem ;
+    }
+}
+
+/* @media screen and (min-width: 375px) {
+   body{
+    background-color: red;
+   } 
+
+   #tab,#laptop{
+    display: none;
+   }
+}
+
+@media screen and (min-width: 420px) {
+    body{
+        background-color: green;
+    } 
+}
+
+@media screen and (min-width: 600px) {
+    body{
+        background-color: yellow;
+    }
+
+    #tab{
+        display: block;
+    }
+
+    #mobile,#laptop{
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 1025px) {
+    body{
+        background-color: pink;
+    } 
+
+    #laptop{
+        display: block;
+    }
+
+    #tab,#mobile{
+        display: none;
+    } 
+} */
